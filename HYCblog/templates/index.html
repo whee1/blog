@@ -1,0 +1,75 @@
+﻿{% extends 'base_right.html' %}
+{% load static %}
+{% load lunzi_tags %}
+{% block title %}HYC{% endblock title %}
+{% block body %}
+
+	<div class="content-wrap">
+	<div class="content">
+<!--轮播图数据渲染-->
+<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+        {% get_carousel_index as carousels %}
+        {% for carousel in carousels %}
+        <li>
+            <a target="_blank" href="{{ carousel.url }}" title="carousel.content">
+                <img src='{{ carousel.img_url }}'  title="{{ carousel.title }}" alt="{{ carousel.title }}" />
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+    <div class="ws_thumbs">
+        <div>
+            {% get_carousel_index as carousels %}
+            {% for carousel in carousels %}
+            <a target="_blank" href="#" title="{{ carousel.title }}"><img src="{{ carousel.img_url }}"/></a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ws_shadow">
+    </div>
+	</div>
+    <!--热门排行数据渲染-->
+        <script type="text/javascript" src='{% static 'js/slider.js'%}'></script>
+					<div><div class="left-ad" style="clear: both;background-color: #fff; width: 30%;float: left;margin-right:2%;"></div><div class="hot-posts">
+			<h2 class="title">热门排行</h2>
+			<ul>
+                {% get_article_list 'views' 5  as hot_articles  %}
+                {% for hot in hot_articles %}
+                <li><p><span class="muted"><a href="javascript:;" data-action="ding" data-id="{{ hot.id }}" id="Addlike" class="action"><i class="fa fa-heart-o"></i><span class="count">{{ hot.loves }}</span> 喜欢</a></span></p><span class="label label-{{ forloop.counter }}">{{ forloop.counter }}</span><a href="/article/{{ hot.slug }}" title="{{ hot.title }}">{{ hot.title }}</a></li>
+              {% endfor %}
+            </ul>
+		</div></div>
+        {% get_article_list as articles %}
+{% for article in articles %}
+    <article class="excerpt">
+        <header><a class="label label-important" href="/category/{{ article.category.bigcategory.name }}/{{ article.category.name|lower }}">{{ article.category.name }}<i class="label-arrow"></i></a>
+            <h2><a target="_blank" href="/article/{{ article.slug }}" title="{{ article.title }}">{{ article.title }} </a></h2>
+        </header>
+        <div class="focus"><a target="_blank" href="/article/{{ article.slug }}"><img class="thumb" width="200" height="123" src="{{ article.img_link }}"
+                                                                                           alt="{{ article.title }}"/></a></div>
+        <span class="note">{{ article.summary }}</span>
+        <p class="auth-span">
+            <span class="muted"><i class="fa fa-user"></i> <a href="/author/{{ article.author }}">{{ article.author }}</a></span>
+            <span class="muted"><i class="fa fa-clock-o"></i> {{ article.create_date|date:'Y-m-d' }}</span> <span class="muted"><i class="fa fa-eye"></i> {{ article.views }}浏览</span>
+            <span class="muted">
+                <i class="fa fa-comments-o"></i>
+                    <a target="_blank" href="/article/{{ article.slug }}#comments">评论</a>
+            </span>
+            <span class="muted">
+                <a href="javascript:;" data-action="ding" data-id="{{ article.id }}" id="Addlike" class="action">
+                <i class="fa fa-heart-o"></i>
+                <span class="count">{{ article.loves }}</span>喜欢</a>
+            </span>
+        </p>
+    </article>
+{% empty %}
+    <div class="no-post">暂时还没有发布的文章！</div>
+{% endfor %}
+    </div></div>
+{% endblock body %}
+
+
+
