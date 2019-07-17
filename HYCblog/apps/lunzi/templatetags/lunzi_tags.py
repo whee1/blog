@@ -20,11 +20,14 @@ def get_carousel_index():
 
 @register.simple_tag
 def get_article_list(sort=None,num=None):
+
     if sort:
         if num:
             return Article.objects.order_by(sort)[:num]
+
     if num:
         return Article.objects.all()[:num]
+
     return Article.objects.all()
 
 @register.simple_tag
@@ -48,3 +51,9 @@ def get_friend_list():
 @register.simple_tag
 def get_article_tag(article_id):
     return Tag.objects.filter(article=article_id)
+
+@register.simple_tag
+def get_title(category):
+    a = BigCategory.objects.filter(slug=category)
+    if a:
+        return a[0]
