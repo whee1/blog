@@ -57,3 +57,7 @@ def get_title(category):
     a = BigCategory.objects.filter(slug=category)
     if a:
         return a[0]
+
+@register.simple_tag
+def get_date(year,day):
+    pass

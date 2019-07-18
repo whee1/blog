@@ -47,7 +47,7 @@ class IndexView(generic.ListView):
             self.big_slug = self.big_slug[0].slug
             queryset = queryset.filter(tags=tags)
 
-        return queryset
+        return queryset   #获取定制数据集
 
     def get_context_data(self, **kwargs):
         """
@@ -183,3 +183,5 @@ class IndexView(generic.ListView):
 
         return data
 
+def AboutView(request):
+    return render(request,'about.html',{'category':'about'})
