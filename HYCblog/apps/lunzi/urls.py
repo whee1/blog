@@ -6,7 +6,7 @@ urlpatterns=[
 
 
     # 分类页面
-    url(r'^category/(?P<bigslug>.*?)/(?P<slug>.*?)', IndexView.as_view(template_name='content.html'), name='category'),
+    url(r'^category/(?P<bigslug>.*?)/(?P<slug>.*?)/$', IndexView.as_view(template_name='content.html'), name='category'),
     # 归档页面
     url(r'^date/(?P<year>\d+)/(?P<month>\d+)/$', IndexView.as_view(template_name='archive.html'), name='date'),
     # 标签页面

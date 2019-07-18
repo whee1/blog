@@ -56,7 +56,7 @@ admin.site.site_title = '博客后台管理'
 @admin.register(Carousel)
 class CarouselAdmin(admin.ModelAdmin):
     list_display = ('number', 'title', 'content', 'img_url', 'url')
-
+    list_editable = ['img_url']
 
 @admin.register(Keyword)
 class KeywordAdmin(admin.ModelAdmin):

@@ -115,6 +115,8 @@ var _hmt = _hmt || [];
                     </a>
     </div>
 </div>
+
+
  <div id="nav-header" class="navbar">
     <ul class="nav">
         <!--获取一级分类信息-->
@@ -123,31 +125,31 @@ var _hmt = _hmt || [];
             class="menu-item menu-item-type-custom menu-item-object-custom {% if not category %}current-menu-item current_page_item{% endif %} menu-item-home menu-item-44"><a
                 href="/">首页</a></li>
 
-        <!--导航条一级分类渲染-->
-        {% for big in bigcategory %}
+         <!--导航条一级分类渲染-->
+                    {% for big in bigcategory %}
 
-            <!--获取二级分类信息-->
-            {% get_category_list big.id as cate %}
+                        <!--获取二级分类信息-->
+                        {% get_category_list big.id as cate %}
 
-            <!--如果一级分类下有二级分类则进行渲染-->
-            {% if cate %}
-                <li id="menu-item-14"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category {% if category == big.slug %}current-menu-item {% endif %} menu-item-has-children menu-item-14">
-                        <a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a>
-                            <ul class="sub-menu">
-                                <!--导航条二级分类渲染-->
-                                {% for c in cate %}
-                                        <li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="{% url 'blog:category'  big.slug   c.slug  %}">{{ c.name }}</a></li>
-                                {% endfor %}
-                            </ul>
-                </li>
+                        <!--如果一级分类下有二级分类则进行渲染-->
+                        {% if cate %}
+                            <li id="menu-item-14"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category {% if category == big.slug %}current-menu-item {% endif %} menu-item-has-children menu-item-14">
+                                    <a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a>
+                                        <ul class="sub-menu">
+                                            <!--导航条二级分类渲染-->
+                                            {% for c in cate %}
+                                                    <li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="{% url 'blog:category' big.slug c.slug %}">{{ c.name }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                            </li>
 
-            <!--无二级分类的一级分类渲染-->
-            {% else %}
-                <li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page {% if category == big.slug %}current-menu-item {% endif %} menu-item-851"><a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a></li>
-            {% endif %}
-        {% endfor %}
-        <!--导航条结束-->
+                        <!--无二级分类的一级分类渲染-->
+                        {% else %}
+                            <li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page {% if category == big.slug %}current-menu-item {% endif %} menu-item-851"><a href="{% url 'blog:category' big.slug '' %}">{{ big.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    <!--导航条结束-->
 
         <li style="float:right;">
             <div class="toggle-search"><i class="fa fa-search"></i></div>
@@ -260,6 +262,6 @@ $('#cpv6_left_lower,#cpv6_right_lower').css({
 'width': 0
 });
 }, 500);
-</script>
+</script></section>
 </body>
 </html>
