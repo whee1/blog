@@ -346,45 +346,45 @@
     <session id="1830398677">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.10" value="11" />
-          <entry key="project.open.time.11" value="4" />
-          <entry key="project.open.time.12" value="4" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="12" />
+          <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.open.time.9" value="12" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.open.time.8" value="5" />
+          <entry key="project.open.time.9" value="13" />
+          <entry key="project.opened" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2567" />
-          <entry key="py" value="1725" />
+          <entry key="html" value="2787" />
+          <entry key="py" value="2460" />
           <entry key="py@HYCblog" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="68" />
-          <entry key="HTML" value="2567" />
-          <entry key="Python" value="1725" />
+          <entry key="HTML" value="2787" />
+          <entry key="Python" value="2460" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="17" />
+          <entry key="html" value="25" />
           <entry key="py" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="17" />
+          <entry key="HTML" value="25" />
           <entry key="Python" value="25" />
         </counts>
       </usages-collector>
@@ -392,50 +392,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/content.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/lunzi/templatetags/lunzi_tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="175">
+              <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1563436481779" expanded="true" signature="300:305" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="386:391" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="488:493" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="603:608" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="826:827" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="934:935" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="934:939" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="1085:1090" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="1159:1164" ph="..." />
-                <marker date="1563436481779" expanded="true" signature="1491:1496" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="300:305" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="386:391" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="488:493" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="603:608" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="826:827" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="934:935" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="934:939" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="1085:1090" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="1159:1164" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="1502:1503" ph="..." />
+                <marker date="1563505113693" expanded="true" signature="1709:1714" ph="..." />
               </folding>
             </state>
           </provider>
@@ -444,8 +418,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/lunzi/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+            <state relative-caret-position="228">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -454,25 +428,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base_right.html">
+        <entry file="file://$PROJECT_DIR$/apps/lunzi/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="4">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#643#1836#0" />
+                <element signature="e#1888#3193#0" />
+                <element signature="e#3265#6247#0" />
+                <element signature="e#6515#7354#0" />
+                <element signature="e#7405#7533#0" />
+                <marker date="1563501236283" expanded="false" signature="495:500" ph="..." />
+                <marker date="1563501236283" expanded="false" signature="6272:6273" ph="..." />
+                <marker date="1563501236283" expanded="true" signature="6272:6277" ph="..." />
+                <marker date="1563501236283" expanded="false" signature="6372:6377" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/lunzi/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1539">
-              <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1563433426101" expanded="false" signature="246:251" ph="..." />
-                <marker date="1563433426101" expanded="true" signature="6023:6024" ph="..." />
-                <marker date="1563433426101" expanded="true" signature="6023:6028" ph="..." />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-323">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base_right.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -492,6 +499,7 @@
       <find>aside</find>
       <find>欢迎来访</find>
       <find>section</find>
+      <find>wp-admin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -512,15 +520,16 @@
         <option value="$PROJECT_DIR$/HYCblog/urls.py" />
         <option value="$PROJECT_DIR$/HYCblog/settings.py" />
         <option value="$PROJECT_DIR$/apps/lunzi/admin.py" />
-        <option value="$PROJECT_DIR$/apps/lunzi/views.py" />
         <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/templates/content.html" />
-        <option value="$PROJECT_DIR$/apps/lunzi/templatetags/lunzi_tags.py" />
         <option value="$PROJECT_DIR$/templates/archive.html" />
-        <option value="$PROJECT_DIR$/apps/lunzi/urls.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/base_right.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/apps/lunzi/urls.py" />
+        <option value="$PROJECT_DIR$/apps/lunzi/views.py" />
+        <option value="$PROJECT_DIR$/templates/content.html" />
+        <option value="$PROJECT_DIR$/templates/article.html" />
+        <option value="$PROJECT_DIR$/templates/base_right.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/apps/lunzi/templatetags/lunzi_tags.py" />
       </list>
     </option>
   </component>
@@ -531,10 +540,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="162" />
-    <option name="y" value="247" />
+    <option name="x" value="238" />
+    <option name="y" value="58" />
     <option name="width" value="1505" />
-    <option name="height" value="1060" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -542,27 +551,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -580,6 +568,27 @@
               <item name="HYCblog" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="lunzi" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="HYCblog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -659,10 +668,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="198" width="1204" height="848" extended-state="0" />
+    <frame x="191" y="47" width="1204" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2495637" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2809773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -676,7 +685,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="manage.py@HYCblog" order="10" weight="0.32871014" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37771347" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37553957" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3299566" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -715,6 +724,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/lunzi/views.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../testblog/venv/Lib/site-packages/django/db/backends/mysql/base.py">
@@ -807,42 +827,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/lunzi/templatetags/lunzi_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1563436481779" expanded="true" signature="300:305" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="386:391" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="488:493" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="603:608" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="826:827" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="934:935" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="934:939" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="1085:1090" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="1159:1164" ph="..." />
-            <marker date="1563436481779" expanded="true" signature="1491:1496" ph="..." />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/lunzi/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+        <state relative-caret-position="228">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -852,27 +845,68 @@
     <entry file="file://$PROJECT_DIR$/templates/base_right.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/lunzi/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1563433426101" expanded="false" signature="246:251" ph="..." />
-            <marker date="1563433426101" expanded="true" signature="6023:6024" ph="..." />
-            <marker date="1563433426101" expanded="true" signature="6023:6028" ph="..." />
-          </folding>
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+        <state relative-caret-position="347">
+          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/lunzi/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#643#1836#0" />
+            <element signature="e#1888#3193#0" />
+            <element signature="e#3265#6247#0" />
+            <element signature="e#6515#7354#0" />
+            <element signature="e#7405#7533#0" />
+            <marker date="1563501236283" expanded="false" signature="495:500" ph="..." />
+            <marker date="1563501236283" expanded="false" signature="6272:6273" ph="..." />
+            <marker date="1563501236283" expanded="true" signature="6272:6277" ph="..." />
+            <marker date="1563501236283" expanded="false" signature="6372:6377" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/lunzi/templatetags/lunzi_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1563505113693" expanded="true" signature="300:305" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="386:391" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="488:493" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="603:608" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="826:827" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="934:935" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="934:939" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="1085:1090" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="1159:1164" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="1502:1503" ph="..." />
+            <marker date="1563505113693" expanded="true" signature="1709:1714" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

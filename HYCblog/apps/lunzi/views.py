@@ -1,7 +1,14 @@
-from django.shortcuts import render
-from .models import Article,BigCategory,Category,Tag
-from django.shortcuts import get_list_or_404,get_object_or_404
+import markdown
+import time
 from django.views import generic
+from django.conf import settings
+from django.utils.text import slugify
+from django.shortcuts import render, HttpResponse, render_to_response
+from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404, get_list_or_404
+from .models import Article, BigCategory, Category, Tag
+from markdown.extensions.toc import TocExtension  # 锚点的拓展
+
 # Create your views here.
 
 class IndexView(generic.ListView):
@@ -185,3 +192,41 @@ class IndexView(generic.ListView):
 
 def AboutView(request):
     return render(request,'about.html',{'category':'about'})
+
+class DetailView(generic.DetailView):
+    model = Article
+    template_name = 'article.html'
+
+    context_object_name = 'article'
+
+    def get_object(self, queryset=None):
+        obj = super(DetailView,self).get_object()
+
+        u = self.request.user
+        ses=self.request.session
+        the_key='is_read_{}'.format(obj.id)
+        is_read_time = ses.get(the_key)
+        if u != obj.author:
+            if not is_read_time:
+                obj.update_views()
+                ses[the_key] = time.time()
+            else:
+                now_time = time.time()
+                t = now_time-is_read_time
+                if t>60*15:
+                    obj.update_views()
+                    ses[the_key] = time.time()
+        md = markdown.Markdown(
+            extensions=[
+                'markdown.extensions.extra',
+                'markdown.extensions.codehilite',
+                TocExtension(slugify=slugify),
+            ])
+        obj.body = md.convert(obj.body)
+        obj.toc = md.toc
+        return obj
+    def get_context_data(self, **kwargs):
+        context = super(DetailView, self).get_context_data(**kwargs)
+        context['category'] = self.object.id
+        return context
+

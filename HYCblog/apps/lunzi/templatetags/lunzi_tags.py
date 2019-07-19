@@ -59,5 +59,17 @@ def get_title(category):
         return a[0]
 
 @register.simple_tag
-def get_date(year,day):
+def get_article_keywords(article):
+    keywords = []
+    keys = Keyword.objects.filter(article=article)
+    for key in keys:
+        keywords.append(key.name)
+    return ','.join(keywords)
+
+@register.simple_tag
+def get_next_article(article):
+    pass
+
+@register.simple_tag
+def get_last_article(article):
     pass

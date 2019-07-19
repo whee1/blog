@@ -1,0 +1,49 @@
+{% extends 'base_right.html' %}
+{% load lunzi_tags static %}
+{% block title %}{{ object.title }}{% endblock title %}
+{% block description %}
+    <meta name="description" content="{{ object.summary }}"/>
+    {% endblock description %}
+{% block keywords %}
+    <meta name="keywords" content="{% get_article_keywords object %}"/>
+    {% endblock keywords %}
+{% block body %}
+<div class="content-wrap">
+	    <div class="content">
+            <div class="breadcrumbs">
+                <a title="返回首页" href="/"><i class="fa fa-home"></i></a><small>></small>
+                <a href="/category/{{ object.category.bigcategory.slug }}//">{{ object.category.bigcategory.slug }}</a> <small>></small>
+                <a href="/category/{{ object.category.bigcategory.slug }}/{{ object.category.slug|lower }}">{{ object.category.name }}</a>
+                <small>></small> <span class="muted">{{ object.title }}</span>
+            </div>
+            <header class="article-header">
+                <h1 class="article-title"><a href="/article/{{ object.slug }}">{{ object.title }}</a></h1>
+                <div class="meta">
+                    <span id="mute-category" class="muted">
+                        <i class="fa fa-list-alt"></i>
+                        <a href="category/technique/{{ object.category.name|lower }}"> {{ object.category.name }}</a>
+                    </span>
+                    <span class="muted">
+                        <i class="fa fa-user"></i>
+                        <a href="/author/{{ object.author.name }}">{{ object.author }}</a>
+                    </span>
+                    <time class="muted"><i class="fa fa-clock-o"></i> {{ object.create_date|date:'y-m-d' }}</time>
+                    <span class="muted"><i class="fa fa-eye"></i> {{ object.views }}浏览</span>
+                    <!--span class="muted">
+                        <i class="fa fa-comments-o"></i>
+                        <a href="/article/{{ object.slug }}#respond">0评论</a>
+                    </span-->
+                </div>
+            </header>
+             <article class="article-content">
+        {{ article.body|safe }}
+        <p>转载请注明：
+            <a href="{% url 'blog:index'  %}">Lunzi</a> &raquo;
+            <a href="{% url 'blog:article' object.slug %}">{{ object.title }}</a>
+
+        </p>
+               <p>
+                   如有任何问题或建议可通过右边联系方式与我进行联系
+               </p></article>
+</div></div>
+{% endblock body %}
