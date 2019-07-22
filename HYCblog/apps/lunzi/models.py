@@ -2,6 +2,7 @@ from django.db import models
 from django.db import models
 from django.conf import settings
 from django.shortcuts import reverse
+from DjangoUeditor.models import UEditorField
 
 import markdown
 import re
@@ -94,7 +95,12 @@ class Article(models.Model):
     title = models.CharField(max_length=150, verbose_name='文章标题')
     summary = models.TextField('文章摘要', max_length=230, default='文章摘要等同于网页description内容，请务必填写...')
         # 文章内容
-    body = models.TextField(verbose_name='文章内容')
+    #body = models.TextField(verbose_name='文章内容')
+    body = UEditorField('内容', width=800, height=500,
+                            toolbars="full", imagePath="upimg/", filePath="upfile/",
+                            upload_settings={"imageMaxSize": 1204000},
+                            settings={}, command=None, blank=True
+                            )
     img_link = models.CharField('图片地址', default=IMG_LINK, max_length=255)
     create_date = models.DateTimeField(verbose_name='创建时间', auto_now_add=True)
     update_date = models.DateTimeField(verbose_name='修改时间', auto_now=True)

@@ -16,10 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.conf.urls import url,include
+from django.conf.urls import url,include,re_path
+from django.views.static import serve
+from django.conf import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ueditor/',include('DjangoUeditor.urls')),
+    re_path('^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),#增加此行
     url('',include(('lunzi.urls','lunzi'),namespace='blog'))
 ]
 urlpatterns += staticfiles_urlpatterns()
