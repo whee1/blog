@@ -108,7 +108,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=20, verbose_name='文章分类')),
                 ('slug', models.SlugField(unique=True)),
                 ('description', models.TextField(default='Lunzi的个人网站', help_text='用来作为SEO中description,长度参考SEO标准', max_length=240, verbose_name='描述')),
-                ('bigcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.lunzi.BigCategory', verbose_name='大分类')),
+                ('bigcategory', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='lunzi.BigCategory', verbose_name='大分类')),
             ],
             options={
                 'verbose_name': '分类',
@@ -130,9 +130,9 @@ class Migration(migrations.Migration):
                 ('loves', models.IntegerField(default=0, verbose_name='喜爱量')),
                 ('slug', models.SlugField(unique=True)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='作者')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='apps.lunzi.Category', verbose_name='文章分类')),
-                ('keywords', models.ManyToManyField(help_text='文章关键词，用来作为SEO中keywords，最好使用长尾词，3-4个足够', to='apps.lunzi.Keyword', verbose_name='文章关键词')),
-                ('tags', models.ManyToManyField(to='apps.lunzi.Tag', verbose_name='标签')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='lunzi.Category', verbose_name='文章分类')),
+                ('keywords', models.ManyToManyField(help_text='文章关键词，用来作为SEO中keywords，最好使用长尾词，3-4个足够', to='lunzi.Keyword', verbose_name='文章关键词')),
+                ('tags', models.ManyToManyField(to='lunzi.Tag', verbose_name='标签')),
             ],
             options={
                 'verbose_name': '文章',

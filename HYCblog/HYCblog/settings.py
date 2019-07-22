@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -41,8 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lunzi',
     'User',
-    'DjangoUeditor'
+    'DjangoUeditor',
+
 ]
+
+
+
+# 前面我们app里添加了django.contrib.sites,需要设置
+SITE_ID=2
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,9 +139,6 @@ USE_L10N = True
 
 USE_TZ = False
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
 
