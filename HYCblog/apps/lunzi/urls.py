@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from .views import IndexView
-from .views import AboutView,DetailView
+from .views import AboutView,DetailView,LoveView
 
 urlpatterns=[
     url(r'^$', IndexView.as_view(template_name='index.html'), name='index'),
@@ -12,7 +12,8 @@ urlpatterns=[
     url(r'^date/(?P<year>\d+)/(?P<month>\d+)/$', IndexView.as_view(template_name='archive.html'), name='date'),
     # 标签页面
     url(r'^tag/(?P<tag>.*?)/$', IndexView.as_view(template_name='content.html'), name='tag'),
-    url(r'article/(?P<slug>.*?)/$',DetailView.as_view(),name='article')
+    url(r'article/(?P<slug>.*?)/$',DetailView.as_view(),name='article'),
+    url(r'^love/$', LoveView, name='love'),
 ]
 '''
    url(r'^category/message//$', MessageView, name='message'),

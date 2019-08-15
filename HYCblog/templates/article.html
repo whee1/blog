@@ -21,11 +21,11 @@
                 <div class="meta">
                     <span id="mute-category" class="muted">
                         <i class="fa fa-list-alt"></i>
-                        <a href="category/technique/{{ object.category.name|lower }}"> {{ object.category.name }}</a>
+                        <a href="/category/{{ object.category.bigcategory.slug }}/{{ object.category.slug|lower }}"> {{ object.category.name }}</a>
                     </span>
                     <span class="muted">
                         <i class="fa fa-user"></i>
-                        <a href="/author/{{ object.author.name }}">{{ object.author }}</a>
+                        <i>{{ object.author }}</i>
                     </span>
                     <time class="muted"><i class="fa fa-clock-o"></i> {{ object.create_date|date:'y-m-d' }}</time>
                     <span class="muted"><i class="fa fa-eye"></i> {{ object.views }}浏览</span>

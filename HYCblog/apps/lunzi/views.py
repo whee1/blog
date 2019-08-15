@@ -26,7 +26,7 @@ class IndexView(generic.ListView):
         month = self.kwargs.get('month', 0)
 
         # 标签
-        tag = self.kwargs.get('tag', 0)
+        tag = self.kwargs.get('tag', '')
 
         # 导航条
         self.big_slug = self.kwargs.get('bigslug', '')
@@ -50,8 +50,6 @@ class IndexView(generic.ListView):
 
         if tag:
             tags = get_object_or_404(Tag, name=tag)
-            self.big_slug = BigCategory.objects.filter(category__article__tags=tags)
-            self.big_slug = self.big_slug[0].slug
             queryset = queryset.filter(tags=tags)
 
         return queryset   #获取定制数据集
@@ -230,3 +228,13 @@ class DetailView(generic.DetailView):
         context['category'] = self.object.id
         return context
 
+@csrf_exempt
+def LoveView(request):
+    data_id = request.POST.get('um_id', '')
+    if data_id:
+        article = Article.objects.get(id=data_id)
+        article.loves += 1
+        article.save()
+        return HttpResponse(article.loves)
+    else:
+        return HttpResponse('error', status=405)
